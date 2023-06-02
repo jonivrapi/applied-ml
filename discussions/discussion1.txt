@@ -1,0 +1,5 @@
+Do you find the model predictions for the digit images as successful? Would you deploy the developed ML model now that you see the performance?
+	
+Your customer requests the model you just developed. What should be the steps you conduct before model delivery?
+	
+Before model delivery, will you train the model with all the available data?
