@@ -1,14 +1,14 @@
-Ground truth
+**Ground truth**
 
-List a few applications which are particularly difficult in terms of obtaining a dataset with ground truth.
+**List a few applications which are particularly difficult in terms of obtaining a dataset with ground truth.**
 
-Difficult applications of obtaining ground truth include:
+**Difficult applications of obtaining ground truth include:**
 
 -   Medical Diagnoses - due to the fact that subject-matter experts are required to produce them, as well as the various privacy concerns that are inherent to anything in the medical field.
 -   NLP related tasks - due to the fact that many tasks, such as semantic parsing and sentiment analysis, are subjective and will vary from person to person. While these do not necessarily require experts to label your data, handing the same data point to different people will produce different results which in turn could ruin the performance of any ML algorithms that use these datasets.
--   Fraud Detection, for example in financial transactions - due to the fact that it is generally very difficult to spot, as well as fraudulent transactions are a very small piece of the overall number of transactions leading to a scarcity of this type of data in general to be labeled.
+-   Fraud Detection, for example in financial transactions - due to the fact that it is generally very difficult to spot because fraudulent transactions are a very small piece of the overall number of transactions leading to a scarcity of this type of data in general to be labeled.
 
-List a few remedies in machine learning when ground truth is not available.
+**List a few remedies in machine learning when ground truth is not available.**
 
 -   Active Learning: This is a process which I recently read about which is generally used when acquiring ground truth labels is very expensive or time-consuming. It is a process by which an algorithm can interactively query a user for labels on new data points. Since, in this case, the learner (the algorithm) is choosing which examples need to be labeled, the total number of examples that need to be labeled in order for the algorithm to be trained can often be much less than labeling an entire dataset ahead of time.
 -   Transfer Learning: This is a type of ML where you would train a model to be very generally good at a related task, and then fine-tune it to the actual task you wish to train it on. For example, let's say there was an abundance of labeled data for classifying cars but not trucks. You wanted to train a model to classify trucks, but training a model from scratch to be able to classify trucks would take, let's say, a million labeled examples. The task of classifying cars is clearly related to the task of classifying trucks, so you would train a model to be very general, and good at classifying cars. Then you would curate a smaller labeled dataset for trucks -- say, 10k examples -- and re-train this model with that data. This approach is effective, and very common today.
